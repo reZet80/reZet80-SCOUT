@@ -1,3 +1,46 @@
 
-reZet80 SCOUT README
---------------------
+reZet80 SCOUT README [last modified: 2022-10-22]
+------------------------------------------------
+
+Welcome to reZet80!
+reZet80 stands for "Reset me back to the 80s with the Z80".
+reZet80 features a set of retro projects to develop computing and
+arcade systems that resemble the Z80 machines of the late 70s and early 80s.
+All systems are built from scratch and not copies of any other Z80 system.
+The development process includes hardware design and low-level software
+programming in Assembler. I will develop and build every single pcb trace
+and every single bit of machine code by myself.
+DIYIB: Doing it yourself is believing!
+And WYDYIWYG: What you do yourself is what you get!
+I started reZet80 back in 2016.
+
+The reZet80 SCOUT is a minimalistic single-board computer (SBC).
+It is equipped with a Z80 CPU, 1 KiB of static RAM and 2 or 4 KiB of ROM
+containing a simple debug monitor.
+Two 8-bit I/O ports connect to a 20-key keypad as default input and a
+2-digit 7-segment display as default output.
+You can also attach other peripherals to both I/O ports.
+The board also includes power supply sockets and on/off and reset switches.
+The reZet80 SCOUT is the little sister/brother of the reZet80 PIONEER.
+If you need more RAM or ROM or better expansion capabilities use the
+reZet80 PIONEER.
+
+A minimal amount of NMOS and LSTTL chips that were available in the mid to
+late 70s are used in this project:
+- Zilog Z80 (CPU, NMOS, 1976)
+- Intel 2114 or compatible (1K x 4 bit static RAM, NMOS, 1976)
+- Intel 2125 or compatible (1K x 1 bit static RAM, NMOS, 1976, alternative to 2114)
+- Intel 2716 or compatible (2 KiB UV erasable EPROM, NMOS, 1977)
+- Intel 2732 or compatible (4 KiB UV erasable EPROM, NMOS, 1978, alternative to 2716)
+- 74LS139 (memory and I/O decoding, LSTTL, 1975)
+- 74LS244 (input and output ports, LSTTL, 1976)
+
+reZet80 SCOUT directory hierarchy:
+|- README       : this file
+|- LICENSE      : reZet80 license
+|- about_myself : as it says
+|- SCOUT_R0     : Release 0 (first release, prototype)
+|-- doc         : technical specifications
+|-- pix         : pictures
+|-- sch         : schematics
+|-- src         : source code (unfinished)
