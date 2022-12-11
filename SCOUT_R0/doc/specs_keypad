@@ -1,0 +1,10 @@
+
+reZet80 SCOUT keypad specs [last modified: 2021-11-23]
+------------------------------------------------------
+
+The reZet80 SCOUT provides a 20-key keypad.
+The keys '0' to 'F' plus 4 special keys (ENTER, BACK, ESC and SHIFT) are
+connected via the input I/O port (see specs_RXM_IO).
+
+Bill of materials:
+- 20 key switches

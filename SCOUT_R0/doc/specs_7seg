@@ -1,0 +1,16 @@
+
+reZet80 SCOUT 2-digit display specs [last modified: 2021-11-23]
+---------------------------------------------------------------
+
+The reZet80 SCOUT uses a 2-digit 7-segment LED display.
+It displays 2 hexadecimal numbers.
+The display has been designed for common cathode LED displays.
+It uses the output I/O port (see specs_RXM_IO).
+
+Please note that the decimal point (DP) is wired in hardware but not enabled
+in software in the current version.
+
+Bill of materials:
+- 2x 1-digit common cathode LED display
+- 2x resistor 1k
+- 2x NPN transistor 160 mA

@@ -1,0 +1,37 @@
+
+reZet80 SCOUT memory & I/O specs [last modified: 2021-12-03]
+------------------------------------------------------------
+
+The 64 KiB address space of the Z80 is divided into 2 banks of 32 KiB each:
+0000-7FFF and 8000-FFFF.
+
+The reZet80 SCOUT is equipped with 1 KiB of RAM and 2 KiB of ROM provided
+by two 2114 chips and one 2716 chip, respectively.
+A 4 KiB ROM chip can be used as an alternative.
+EEPROM chips can also be used although they were not available in the 70s
+(just in case an easier handling is more important than a 70s feeling).
+
+ROM memory stretches from 0000 to 07FF or 0FFF depending on ROM chip.
+RAM memory is located at 8000-83FF.
+
+Two 8-bit I/O ports with port addresses 00 and 01 are provided.
+
+A 74LS139 demultiplexer provides the following low-active signals:
+- /ROMCS (0000-7FFF)
+- /RAMCS (8000-FFFF)
+- /IOSEL_0 (input port 00)
+- /IOSEL_1 (output port 01)
+
+All addresses are given in hexadecimal notation.
+
+Bill of materials:
+- 1x DIP-16 socket (optional)
+- 2x DIP-18 socket (optional)
+- 2x DIP-20 socket (optional)
+- 1x DIP-24 socket (optional)
+- 1x 74LS139 demultiplexer
+- 2x 74LS244 buffer
+- 2x 2114 SRAM (or compatible 1024x4 chips)
+- 1x 2716 EPROM (or compatible 2 KiB chips)
+- 1x 2732 EPROM (or compatible 4 KiB chips, alternative to 2716)
+- 6x capacitor 100 nF
